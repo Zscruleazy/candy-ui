@@ -356,7 +356,7 @@ const Home = (props: HomeProps) => {
       <MainContainer>
         <WalletContainer>
           <Logo>
-            <a href="http://localhost:3000/" target="_blank" rel="noopener noreferrer">
+            <a href="#" target="_blank" rel="noopener noreferrer">
               <img alt="" className="logo" src="logo.png" />
             </a>
           </Logo>
@@ -379,9 +379,13 @@ const Home = (props: HomeProps) => {
             {wallet && isActive && whitelistEnabled && whitelistTokenBalance > 0 && <h3>You have {whitelistTokenBalance} whitelist mint(s) remaining.</h3>}
             {wallet && isActive && (
               /* <p>Total Minted : {100 - (itemsRemaining * 100 / itemsAvailable)}%</p>}*/
-              <h3>
-                TOTAL MINTED : {itemsRedeemed} / {itemsAvailable}
-              </h3>
+
+              <div>
+                <h3>PRICE : ◎ {price}</h3>
+                <h3>
+                  TOTAL MINTED : {itemsRedeemed} / {itemsAvailable}
+                </h3>
+              </div>
             )}
             {wallet && isActive && <BorderLinearProgress variant="determinate" value={100 - (itemsRemaining * 100) / itemsAvailable} />}
             <br />
