@@ -122,7 +122,7 @@ const MainContainer = styled.div`
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  background-color: #082032;
+  background-color: var(--main-background-color);
   padding: 10px 20px;
 `;
 
@@ -356,7 +356,7 @@ const Home = (props: HomeProps) => {
       <MainContainer>
         <WalletContainer>
           <Logo>
-            <a href="localhost" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.thesocialnfts.com/" target="_blank" rel="noopener noreferrer">
               <img alt="" className="logo" src="logo.png" />
             </a>
           </Logo>
