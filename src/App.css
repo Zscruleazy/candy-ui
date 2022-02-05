@@ -41,7 +41,7 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: 515px;
 }
 
 .MuiButton-containedPrimary:not(.MuiButton-fullWidth) {
@@ -71,13 +71,14 @@ h3 {
   margin: auto;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  padding: 20px 20px;
+  padding: 35px 20px;
 }
 .profile img {
   float: right;
 }
 .profile h2 {
   padding-bottom: 20px;
+  font-size: 35px;
 }
 .footer {
   background-color: var(--main-background-color);
@@ -87,7 +88,7 @@ h3 {
   padding: 50px 0;
 }
 .follow h2 {
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .social-box {
@@ -111,9 +112,6 @@ h3 {
   .profile {
     grid-template-columns: 1fr;
     text-align: center;
-  }
-  .profile h2 {
-    font-size: 30px;
   }
   .profile img {
     margin-top: 20px;

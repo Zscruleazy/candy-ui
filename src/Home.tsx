@@ -146,6 +146,7 @@ const BorderLinearProgress = styled(LinearProgress)`
 
 const ShimmerTitle = styled.h1`
   margin: 50px auto;
+  font-size: 50px;
   text-transform: uppercase;
   animation: glow 2s ease-in-out infinite alternate;
   color: var(--main-text-color);
