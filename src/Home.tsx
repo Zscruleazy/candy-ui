@@ -375,7 +375,7 @@ const Home = (props: HomeProps) => {
 
         <MintContainer>
           <NFT elevation={3}>
-            <ShimmerTitle>MINT IS LIVE !</ShimmerTitle>
+            <ShimmerTitle>The Social NFTs</ShimmerTitle>
             {wallet && isActive && whitelistEnabled && whitelistTokenBalance > 0 && <h3>You have {whitelistTokenBalance} whitelist mint(s) remaining.</h3>}
             {wallet && isActive && (
               /* <p>Total Minted : {100 - (itemsRemaining * 100 / itemsAvailable)}%</p>}*/
