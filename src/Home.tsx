@@ -22,7 +22,7 @@ const WalletContainer = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 `;
 const NFT = styled(Paper)`
   min-width: 400px;
@@ -91,42 +91,8 @@ const WalletAmount = styled.div`
 
 const ConnectButton = styled(WalletMultiButton)``;
 const Logo = styled.div`
-  flex: 0 0 auto;
-
   img {
     height: 60px;
-  }
-`;
-const Menu = styled.ul`
-  list-style: none;
-  display: inline-flex;
-  flex: 1 0 auto;
-
-  li {
-    margin: 0 12px;
-
-    a {
-      color: var(--main-text-color);
-      list-style-image: none;
-      list-style-position: outside;
-      list-style-type: none;
-      outline: none;
-      text-decoration: none;
-      text-size-adjust: 100%;
-      touch-action: manipulation;
-      transition: color 0.3s;
-      padding-bottom: 15px;
-
-      img {
-        max-height: 26px;
-      }
-    }
-
-    a:hover,
-    a:active {
-      color: rgb(131, 146, 161);
-      border-bottom: 4px solid var(--title-text-color);
-    }
   }
 `;
 
@@ -167,7 +133,7 @@ const MintContainer = styled.div`
 `;
 
 const Image = styled.img`
-  height: 400px;
+  height: 300px;
   width: auto;
   border-radius: 20px;
 `;
@@ -391,26 +357,9 @@ const Home = (props: HomeProps) => {
         <WalletContainer>
           <Logo>
             <a href="http://localhost:3000/" target="_blank" rel="noopener noreferrer">
-              <img alt="" src="logo.png" />
+              <img alt="" className="logo" src="logo.png" />
             </a>
           </Logo>
-          <Menu>
-            <li>
-              <a href="http://localhost:3000/" target="_blank" rel="noopener noreferrer">
-                Menu 1
-              </a>
-            </li>
-            <li>
-              <a href="http://localhost:3000/" target="_blank" rel="noopener noreferrer">
-                Menu 2
-              </a>
-            </li>
-            <li>
-              <a href="http://localhost:3000/" target="_blank" rel="noopener noreferrer">
-                Menu 3
-              </a>
-            </li>
-          </Menu>
           <Wallet>
             {wallet ? (
               <WalletAmount>
@@ -484,11 +433,14 @@ const Home = (props: HomeProps) => {
       </Snackbar>
       <div className="profile">
         <div className="title">
-          <h2>Candy UI</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid commodi placeat velit praesentium accusamus nesciunt animi at doloribus laudantium quos, atque exercitationem dolorem tempore non deserunt a ipsam nisi voluptates.</p>
+          <h2>The Social NFTs</h2>
+          <p>
+            The Social NFT consist of 3,000 Generation 1 NFT. It is a revolutionary multi utility NFT that encompasses of online and offline utilities. We are building an exquisite club that will be known not only on the NFT space but in the real
+            world as well. Benefits from Airport Lounges, Accessing NFT Vault in our very own Metaverse, yielding from our multi-disciplinary stream of revenue generating incomes to name a few. Traditionally, the world knows it as one stop shop.
+          </p>
         </div>
         <div className="profile-img">
-          <Image src="cool-cats.gif" alt="NFT To Mint" />
+          <Image src="nft.gif" alt="NFT To Mint" />
         </div>
       </div>
       <div className="footer">
@@ -498,18 +450,17 @@ const Home = (props: HomeProps) => {
             <p>Get news &#38; informations</p>
           </div>
           <div className="social-box">
-            <a href="localhost">
+            <a href="https://twitter.com/TheSocialNFTs" target="_blank" rel="noreferrer">
               <img src={twitter} alt="" />
             </a>
-            <a href="localhost">
+            <a href="https://discord.gg/5XydcQrNfJ" target="_blank" rel="noreferrer">
               <img src={discord} alt="" />
             </a>
           </div>
         </div>
         <hr></hr>
         <div className="copyright">
-          <p>@ 2021 NEKO NFT</p>
-          <p>TERMS &#38; CONDTIONS</p>
+          <p>@ 2022 The Social NFTs</p>
         </div>
       </div>
     </main>

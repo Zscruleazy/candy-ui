@@ -101,6 +101,9 @@ h3 {
   justify-content: space-between;
   font-size: 14px;
 }
+.logo {
+  border-radius: 50px;
+}
 
 @media (max-width: 898px) {
   .profile {
