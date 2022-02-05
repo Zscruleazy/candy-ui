@@ -7,7 +7,7 @@ import { useAnchorWallet } from "@solana/wallet-adapter-react";
 import { WalletMultiButton } from "@solana/wallet-adapter-material-ui";
 import { GatewayProvider } from "@civic/solana-gateway-react";
 import Countdown from "react-countdown";
-import { Snackbar, Paper, LinearProgress, Chip } from "@material-ui/core";
+import { Snackbar, Paper, LinearProgress } from "@material-ui/core";
 import Alert from "@material-ui/lab/Alert";
 import twitter from "./img/twitter.png"; // with import
 import discord from "./img/discord.png"; // with import
@@ -28,10 +28,6 @@ const NFT = styled(Paper)`
   min-width: 400px;
   padding: 5px 20px 20px 20px;
   flex: 1 1 auto;
-`;
-const Des = styled(NFT)`
-  text-align: left;
-  padding-top: 0px;
 `;
 
 const Card = styled(Paper)`
@@ -170,13 +166,6 @@ const MintContainer = styled.div`
   justify-content: center;
 `;
 
-const Price = styled(Chip)`
-  position: absolute;
-  margin: 5px;
-  font-weight: bold;
-  font-size: 1em !important;
-`;
-
 const Image = styled.img`
   height: 400px;
   width: auto;
@@ -201,20 +190,6 @@ const ShimmerTitle = styled.h1`
     to {
       text-shadow: 0 0 30px var(--title-text-color), 0 0 10px var(--title-text-color);
     }
-  }
-`;
-
-const GoldTitle = styled.h2`
-  color: var(--title-text-color);
-`;
-
-const LogoAligner = styled.div`
-  display: flex;
-  align-items: center;
-
-  img {
-    max-height: 35px;
-    margin-right: 10px;
   }
 `;
 
@@ -523,10 +498,10 @@ const Home = (props: HomeProps) => {
             <p>Get news &#38; informations</p>
           </div>
           <div className="social-box">
-            <a href="">
+            <a href="localhost">
               <img src={twitter} alt="" />
             </a>
-            <a href="">
+            <a href="localhost">
               <img src={discord} alt="" />
             </a>
           </div>
