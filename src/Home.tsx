@@ -356,7 +356,7 @@ const Home = (props: HomeProps) => {
       <MainContainer>
         <WalletContainer>
           <Logo>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="localhost" target="_blank" rel="noopener noreferrer">
               <img alt="" className="logo" src="logo.png" />
             </a>
           </Logo>
