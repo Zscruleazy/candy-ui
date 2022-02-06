@@ -63,7 +63,7 @@ const MintButtonContainer = styled.div`
 `;
 
 const WalletAmount = styled.div`
-  color: black;
+  color: white;
   width: auto;
   height: 48px;
   padding: 0 5px 0 16px;
@@ -133,9 +133,9 @@ const MintContainer = styled.div`
 `;
 
 const Image = styled.img`
-  height: 300px;
-  width: auto;
+  width: 100%;
   border-radius: 20px;
+  padding: 10px 0;
 `;
 
 const BorderLinearProgress = styled(LinearProgress)`
