@@ -63,7 +63,7 @@ const MintButtonContainer = styled.div`
 `;
 
 const WalletAmount = styled.div`
-  color: var(--main-text-color);
+  color: var(--main-background-color);
   width: auto;
   height: 48px;
   padding: 0 5px 0 16px;
